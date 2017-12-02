@@ -2,5 +2,9 @@ theme: jekyll-theme-slate
 title: My amazing post
 showGitHubRibbon: true
 {% if site.showGitHubRibbon %}
-  <h1>This is a test</h1>
+  <li>
+    <a href="https://twitter.com">
+      <i class="fa fa-twitter"></i> Twitter
+    </a>
+  </li>
 {% endif %}
