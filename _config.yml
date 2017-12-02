@@ -1,6 +1,6 @@
-theme: jekyll-theme-slate
-plugins:
-  - jekyll-redirect-from
-  
+theme: jekyll-theme-slate  
 title: My amazing post
-redirect_to: http://www.github.com
+showGitHubRibbon: true
+{% if site.showGitHubRibbon %}
+  <h1>This is a test</h1>
+{% endif %}
