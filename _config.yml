@@ -2,3 +2,17 @@ theme: jekyll-theme-cayman
 title: My amazing post
 showGitHubRibbon: true
 preview_path: https://www.gem-editor.com/gwc/theme
+website_theme:
+  - name: 1
+    desc: Vertical Button
+    cssf: Bootstrap 3
+    pwfn:
+  - name: 1af
+    desc: Vertical Button, fixed
+    cssf: Bootstrap 3
+    pwfn:
+  - name: 1at
+    desc: Vertical Button, affix
+    cssf: Bootstrap 3
+    pwfn: 501
+    
