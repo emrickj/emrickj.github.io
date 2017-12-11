@@ -1,2 +1,2 @@
 # emrickj.github.io
-<a title="Preview" href="www.gem-editor.com">&#x1f50d;</a>
+<a title="Preview" href="{{ site.preview_path }}">&#x1f50d;</a>
