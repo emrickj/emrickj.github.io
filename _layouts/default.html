@@ -25,6 +25,9 @@
 
     <section class="main-content">
       {{ content }}
+      {% for item in page.website_theme %}
+         {{ item.name }} {{ item.desc }} {{ item.cssf }} {{ item.pwfn }}
+      {% endfor %}
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
