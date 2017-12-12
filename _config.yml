@@ -27,4 +27,136 @@ website_theme:
     desc: Vertical Button 2
     cssf: Bootstrap 4
     pwfn: 511
+  - name: 2
+    desc: Navigation Bar
+    cssf: Bootstrap 3
+    pwfn: 501
+  - name: 2fi
+    desc: Navigation Bar, fixed top
+    cssf: Bootstrap 3
+    pwfn: 501
+  - name: 2in
+    desc: Navigation Bar, inverted
+    cssf: Bootstrap 3
+    pwfn: 501
+  - name: 2if
+    desc: Navigation Bar, inverted, fixed top
+    cssf: Bootstrap 3
+    pwfn: 501
+  - name: 2ia
+    desc: Navigation Bar, inverted, affix
+    cssf: Bootstrap 3
+    pwfn: 500
+  - name: 2prm
+    desc: Navigation Bar, blue
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2suc
+    desc: Navigation Bar, green
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2inf
+    desc: Navigation Bar, cyan
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2wrn
+    desc: Navigation Bar, yellow
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2dng
+    desc: Navigation Bar, red
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2sec
+    desc: Navigation Bar, gray
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2drk
+    desc: Navigation Bar, dark
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2lit
+    desc: Navigation Bar, light
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2fprm
+    desc: Navigation Bar, fixed-top, blue
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2fsuc
+    desc: Navigation Bar, fixed-top, green
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2finf
+    desc: Navigation Bar, fixed-top, cyan
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2fwrn
+    desc: Navigation Bar, fixed-top, yellow
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2fdng
+    desc: Navigation Bar, fixed-top, red
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2fsec
+    desc: Navigation Bar, fixed-top, gray
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2fdrk
+    desc: Navigation Bar, fixed-top, dark
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2flit
+    desc: Navigation Bar, fixed-top, light
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2fcd
+    desc: Navigation Bar, fixed-top, card style
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 2cda
+    desc: Navigation Bar, card style 2
+    cssf: Bootstrap 4
+    pwfn: 500
+  - name: 2cdsu
+    desc: Navigation Bar, slide up
+    cssf: Bootstrap 4
+    pwfn: 508
+  - name: 3
+    desc: Scrollspy
+    cssf: Bootstrap 3
+    pwfn: 501
+  - name: 3a
+    desc: Scrollspy & Affix
+    cssf: Bootstrap 3
+    pwfn: 501
+  - name: 3b4
+    desc: Scrollspy
+    cssf: Bootstrap 4
+    pwfn: 508
+  - name: 3sn
+    desc: Scrollspy with Sticky Navbar
+    cssf: Bootstrap 4
+    pwfn: 508
+  - name: 4
+    desc: Scrollspy Vertical Menu
+    cssf: Bootstrap 3
+    pwfn: 501
+  - name: 4a
+    desc: Scrollspy Vertical Menu 2
+    cssf: Bootstrap 3
+    pwfn: 501
+  - name: 4b
+    desc: Scrollspy Vertical Menu 3
+    cssf: Bootstrap 3
+    pwfn: 501
+  - name: 4b4
+    desc: Scrollspy Vertical Menu
+    cssf: Bootstrap 4
+    pwfn: 511
+  - name: 5
+    desc: Horizontal Menu
+    cssf: Bootstrap 3
+    pwfn: 501
     
