@@ -159,4 +159,124 @@ website_theme:
     desc: Horizontal Menu
     cssf: Bootstrap 3
     pwfn: 501
+  - name: w1
+    desc: Sidebar
+    cssf: W3.CSS
+    pwfn: 509
+  - name: w1rd
+    desc: Sidebar, red
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1pk
+    desc: Sidebar, pink
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1pu
+    desc: Sidebar, purple
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1dp
+    desc: Sidebar, deep purple
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1in
+    desc: Sidebar, indigo
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1blu
+    desc: Sidebar, blue
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1lb
+    desc: Sidebar, light blue
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1cy
+    desc: Sidebar, cyan
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1te
+    desc: Sidebar, teal
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1grn
+    desc: Sidebar, green
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1lg
+    desc: Sidebar, light green
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1li
+    desc: Sidebar, lime
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1kh
+    desc: Sidebar, khaki
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1ye
+    desc: Sidebar, yellow
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1am
+    desc: Sidebar, amber
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1or
+    desc: Sidebar, orange
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1do
+    desc: Sidebar, deep orange
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1bg
+    desc: Sidebar, blue grey
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1br
+    desc: Sidebar, brown
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1gr
+    desc: Sidebar, grey
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1dg
+    desc: Sidebar, dark grey
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1bl
+    desc: Sidebar, black
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w1w3
+    desc: Sidebar, w3schools
+    cssf: W3.CSS
+    pwfn: 510
+  - name: w6
+    desc: Architect
+    cssf: W3.CSS
+    pwfn: 502
+  - name: w5
+    desc: Dark Portfolio
+    cssf: W3.CSS
+    pwfn: 503
+  - name: w2
+    desc: Interior Designer
+    cssf: W3.CSS
+    pwfn: 504
+  - name: w3
+    desc: Marketing
+    cssf: W3.CSS
+    pwfn: 505
+  - name: w7
+    desc: Parallax
+    cssf: W3.CSS
+    pwfn: 506
+  - name: w4
+    desc: Startup
+    cssf: W3.CSS
+    pwfn: 507
     
