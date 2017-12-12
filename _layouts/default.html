@@ -25,13 +25,30 @@
 
     <section class="main-content">
       {{ content }}
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>CSS Framework</th>
+            <th> </th>
+          </tr>
+        </thead>
+        <tbody>
       {% for item in site.website_theme %}
-      <p> {{ item.name }} {{ item.desc }} {{ item.cssf }}
+          <tr>
+            <td> {{ item.name }} </td>
+            <td> {{ item.desc }} </td>
+            <td> {{ item.cssf }} </td>
+            <td>
         {% if item.pwfn != nil %} 
         <a href="{{ item.pwfn }}">Test</a> 
         {% endif %} 
-      </p>
+            </td>
+          </tr>
       {% endfor %}
+        </tbody>
+      </table>
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}
