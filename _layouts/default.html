@@ -26,7 +26,11 @@
     <section class="main-content">
       {{ content }}
       {% for item in site.website_theme %}
-         {{ item.name }} {{ item.desc }} {{ item.cssf }} {{ item.pwfn }}
+      <p> {{ item.name }} {{ item.desc }} {{ item.cssf }}
+        {% if item.pwfn contains '5' %} 
+        <a href="{{ item.pwfn }}">Test</a> 
+        {% endif %} 
+      </p>
       {% endfor %}
 
       <footer class="site-footer">
