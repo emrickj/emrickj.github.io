@@ -37,12 +37,12 @@
         <tbody>
       {% for item in site.website_theme %}
           <tr>
-            <td> {{ item.name }} </td>
+            <td> <a href="{{ item.name | prepend: "theme" }}.php">{{ item.name | prepend: "theme" }}</a> </td>
             <td> {{ item.desc }} </td>
             <td> {{ item.cssf }} </td>
             <td>
         {% if item.pwfn != nil %} 
-        <a href="{{ item.pwfn }}">Test</a> 
+        <a href="{{ site.preview_path | append: item.name }}.php?u={{ item.pwfn }}">Test</a> 
         {% endif %} 
             </td>
           </tr>
