@@ -27,7 +27,7 @@
       {{ content }}
       {% for item in site.website_theme %}
       <p> {{ item.name }} {{ item.desc }} {{ item.cssf }}
-        {% if item.pwfn contains '5' %} 
+        {% if item.pwfn != '' %} 
         <a href="{{ item.pwfn }}">Test</a> 
         {% endif %} 
       </p>
