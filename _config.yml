@@ -1,6 +1,6 @@
 theme: jekyll-theme-cayman  
 title: My amazing post
-showGitHubRibbon: true
+show_downloads: true
 preview_path: https://www.gem-editor.com/gwc/theme
 website_theme:
   - name: 1
