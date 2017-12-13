@@ -52,13 +52,14 @@
         <tbody>
       {% for item in site.website_theme %}
           <tr>
-            <td> <a href="{{ item.name | prepend: "theme" }}.php">{{ item.name | prepend: "theme" }}</a> </td>
+            <td> {{ item.name | prepend: "theme" }} </td>
             <td> {{ item.desc }} </td>
             <td> {{ item.cssf }} </td>
             <td>
-        {% if item.pwfn != nil %} 
-        <a class="icon_btn" title="Preview" href="{{ site.preview_path | append: item.name }}.php?u={{ item.pwfn }}" target="_blank"><i class="fa fa-search"></i></a>
-        {% endif %} 
+              <a class="icon_btn" title="Download" href="{{ item.name | prepend: "theme" }}.php"><i class="fa fa-download fa-fw"></i></a>
+              {% if item.pwfn != nil %} 
+              <a class="icon_btn" title="Preview" href="{{ site.preview_path | append: item.name }}.php?u={{ item.pwfn }}" target="_blank"><i class="fa fa-search fa-fw"></i></a>
+              {% endif %} 
             </td>
           </tr>
       {% endfor %}
