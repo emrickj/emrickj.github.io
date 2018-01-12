@@ -2,3 +2,12 @@ theme: jekyll-theme-slate
 title: My amazing post
 show_downloads: true
 preview_path: https://www.gem-editor.com/gwc/theme
+collections:
+  webpages:
+    output: true
+defaults:
+  - scope:
+      path: ""
+      type: webpages
+    values:
+      layout: page
