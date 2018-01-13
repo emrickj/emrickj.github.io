@@ -9,11 +9,31 @@
 <style>
 t1 { white-space: pre-wrap;}
 
+.affix {
+    top: 0;
+    width: 100%;
+}
+
+.affix + .container {
+    padding-top: 70px;
+}
+
+.bgimg {
+    background-image: url("{{ page.image_url | relative url }}");
+    background-color: #C0C0C0;
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: auto 400px;
+    min-height: 400px;
+}
+
+
 
    </style>
 </head>
 <body class='page1' id='demo'>
-<nav class="navbar navbar-default navbar-fixed-top">
+<div class="bgimg"></div>
+<nav class="navbar navbar-inverse" data-spy="affix" data-offset-top="400" style="z-index: 5;">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -36,25 +56,15 @@ t1 { white-space: pre-wrap;}
     </div>
   </div>
 </nav>
-   <div class="container" style="padding-top: 76px;">
-      <div class="row">
-         <div class="col-sm-2">
-         </div>
-         <div class="col-sm-8">
-		    <div class="panel panel-primary">
-		    {% if page.image_url %}
-				<img src='{{ page.image_url | relative url }}' style='width: 100%;height: auto;'>
-				{% endif %}
-				<div class="panel-body">
-					 {{ content }}				</div>
-				<div class="panel-footer">
-					<center>This theme along with others can be found on <a href="https://github.com/emrickj/jekyll-themes">GITHUB</a>.</center>
-				</div>
-            </div>				 
-         </div>
-         <div class="col-sm-2">
-         </div>
-      </div>
+   <div class="container">
+     <div class="row">
+        <div class="col-sm-2">
+        </div>
+        <div class="col-sm-8">
+           {{ content }}        </div>
+        <div class="col-sm-2">
+        </div>
+     </div>
    </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
