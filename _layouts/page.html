@@ -1,60 +1,83 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-pink.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>{{ site.title | default: site.github.repository_name }}</title>
 <style>
-t1 { white-space: pre-wrap;}
+@media (min-width: 576px) {
+	form label {text-align: right;}
+}
 
 
-   </style>
+</style>
 </head>
-<body>
-
-<!-- Sidebar -->
-<div class="w3-sidebar w3-light-grey w3-bar-block w3-large w3-collapse w3-card-2 w3-animate-left"
- style="width:200px;" id="mySidebar">
-<button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
-{% for item in site.webpages %}
-	{% assign bs = "" %}
-	{% if page.url == item.url %}
-		{% assign bs = " w3-gray" %}
-	{% endif %}
-	<a href='{{ item.url | relative_url }}' class='w3-bar-item w3-button{{ bs }}'>{{ item.title }}</a>
-{% endfor %}
+<body class='page1' id='demo'>
+<div class="d-block d-md-none">
+<nav class="navbar bg-light navbar-light fixed-top">
+  <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myNavbar">
+	<span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="navbar-nav">
+	{% for item in site.webpages %}
+		{% assign bs = "" %}
+		{% if page.url == item.url %}
+		    {% assign bs = " active" %}
+		{% endif %}
+        <li class='nav-item'><a class='nav-link{{ bs }}' href='{{ item.url | relative_url }}'>{{ item.title }}</a></li>
+	{% endfor %}
+	</ul>
+  </div>
+</nav>
 </div>
-
-<!-- Page Content -->
-<div class="w3-main" style="margin-left:200px">
-<div class="w3-theme-dark">
-  <button class="w3-button w3-theme-dark w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+<div class="container" style="padding-top: 20px;padding-bottom: 20px;">
+	<div class="d-block d-md-none" style="padding-top: 50px;"></div>
+   <div class="card">
+	   <div class="card-header bg-dark text-white">
+	     <div class="d-none d-md-block">
+			 <svg height="60" width="450">
+				<filter id="lightMe1">
+				  <feDiffuseLighting in="SourceGraphic" result="light"
+					 lighting-color="white">
+					 <fePointLight x="200" y="60" z="100" />
+				  </feDiffuseLighting>
+				  <feComposite in="SourceGraphic" in2="light"
+					 operator="arithmetic" k1="1" k2="0" k3="0" k4="0"/>
+				</filter>
+				<text font-size="45" font-weight="bold" x="0" y="45" fill="white" filter="url(#lightMe1)">{{ site.title | default: site.github.repository_name }}</text> 
+			 </svg>
+		 </div>
+		 <div class="d-block d-md-none">
+		    {{ site.title | default: site.github.repository_name }}
+		 </div>
+	   </div>
+	   <div class="d-none d-md-block" style="padding: 5px;">
+		  <ul class="nav nav-pills">
+		{% for item in site.webpages %}
+			{% assign bs = "" %}
+			{% if page.url == item.url %}
+				{% assign bs = " active" %}
+			{% endif %}
+			<li class='nav-item'><a class='nav-link{{ bs }}' href='{{ item.url | relative_url }}'>{{ item.title }}</a></li>
+		{% endfor %}
+		  </ul>
+	   </div>
+	   {% if page.image_url %}
+	   <img src='{{ page.image_url | relative url }}' style='width: 100%;height: auto;'>
+	   {% endif %}
+	   <div class="card-body bg-light">
+				{{ content }}
+	   </div>
+	   <div class="card-footer" style="font-size: .83em;">
+			<center>This theme along with others can be found on <a href="https://github.com/emrickj/jekyll-themes">GITHUB</a>.</center>
+	   </div>
+   </div>
 </div>
-<div class="w3-container w3-theme">
-  <h1>{{ site.title | default: site.github.repository_name }}</h1>
-</div>
-{% if page.image_url %}
-<img class='w3-image' src='{{ page.image_url | relative url }}' style='width:100%'>
-{% endif %}
-
-<div class="w3-container">
-{{ content }}
-</div>
-<div class="w3-container w3-theme-dark">
-<center><h6>This theme along with others can be found on <a href="https://github.com/emrickj/jekyll-themes">GITHUB</a>.</h6></center>
-</div>
-</div>
-
-<script>
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>
